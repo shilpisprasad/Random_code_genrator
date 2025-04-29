@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Code Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+</head>
+
+<body class="d-flex justify-content-center align-items-center min-vh-100">
+    <script src="./app.js"></script>
+     <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded" >
+        
+        <h1>Random Code Generator</h1>
+        <label> Length: </label>
+        
+        <input type="number" name="length" id="length"  value="6" min="1" max="50" required><br><br>
+
+        <label> Type: </label>
+        <select name="type">
+            <option value="mixed">Mixed</option>
+            <option value="letters">Letters</option>
+            <option value="numbers">Numbers</option>
+        </select><br><br>
+
+        <button type="submit"  onclick="generateCode()">Generate</button>
+
+        <h3 id="result" style="color: green;"></h3>
+    </div>
+   
+
+</body>
+</html>
